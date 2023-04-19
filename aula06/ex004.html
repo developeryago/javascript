@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros Passos</title>
+    <title>Exercício 4</title>
     <style>
-        *{
+         *{
             margin: 0px;
             padding: 0px;
         }
@@ -18,22 +18,16 @@
         h1{
             padding: 10px;
         }
-        p{
-            text-indent: 12px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
     </style>
 </head>
 <body>
     <main>
-        <h1>Olá, mundo!</h1>
-        <p>Estou aprendendo Javascript</p>
+        <script>
+            var nome = window.prompt('Qual seu nome? ')
+            document.write(`<h1>Olá ${nome}, seu nome tem ${nome.length} letras</h1><br>`)
+            document.write(`<h1>Seu nome em maiúsculas é ${nome.toUpperCase()}</h1><br>`)
+            document.write(`<h1>Seu nome em minúsculas é ${nome.toLowerCase()}</h1>`)
+        </script>
     </main>
-    <script>
-        var n1 = window.prompt('Digite um número: ')
-        var n2 = window.prompt('Digite outro número: ')
-        var r = Number(n1) + Number(n2)
-        window.alert(`A soma dos valores é ${r}`)
-    </script>
 </body>
 </html>
