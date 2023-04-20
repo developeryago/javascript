@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.623);
+        }
+        div#area{
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            font: 30px Arial;
+            text-align: center;
+            line-height: 300px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+    <script>
+         var a = document.getElementById("area")
+
+         a.addEventListener('click', clicar)
+         a.addEventListener('mouseenter', entrar)
+         a.addEventListener('mouseout', saiu)
+
+        function clicar(){
+            a.innerText = "Você clicou aqui"
+            a.style.backgroundColor = "black"
+        }
+        function entrar(){
+            a.innerText = "Mouse sobre a area"
+            a.style.backgroundColor = "lightgreen"
+        }
+        function saiu(){
+            a.innerText = "Mouse saiu da area"
+            a.style.backgroundColor = "lightcoral"
+        }
+    </script>
+</body>
+</html>
