@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do dia</title>
-    <link rel="stylesheet" href="../styles/style-ex01.css">
+    <link rel="stylesheet" href="styles/style-ex01.css">
 </head>
-<body>
+<body id="fundo" onload="Carregar()">
     <header>
         <h1>Hora do Dia</h1>
     </header>
     <section>
         <div>
+            <p id="msg"></p>
+        </div>
+        <div id="img">
+            <img id="foto" src="manha.jpg" alt="foto do dia">
         </div>
     </section>
-    <section>
-
-    </section>
+    <footer>
+        <p>Criado por <a href="https://github.com/developeryago">Yago Machado</a></p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
