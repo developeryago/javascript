@@ -13,7 +13,7 @@ function Carregar(){
         img.src = 'tarde.jpg'
     } else if (hora > 18){
         mensagem.innerHTML = `Boa noite! Agora são ${hora}hrs`
-        fundo.style.backgroundColor = "rgb(75, 75, 75)"
+        fundo.style.backgroundColor = "black"
         img.src = 'noite.jpg'
     } 
 }
