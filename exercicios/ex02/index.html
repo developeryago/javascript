@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="styles/style-ex01.css">
 </head>
 <body id="fundo" >
@@ -15,17 +15,18 @@
         <div>
             
             <p id="msg">Ano de Nascimento: <input type="number" name="txt" id="ano"></p>
-            <p>Sexo:</p>
 
-            <input type="radio" name="radio" id="masc" checked> <label for="masc">Masculino</label>
-            <input type="radio" name="radio" id="fem">
-            <label for="fem">Feminino</label>
+            <p>Sexo:
+                <input type="radio" name="radio" id="masc" checked> <label for="masc">Masculino</label>
+                <input type="radio" name="radio" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
 
-            <p><input type="button" value="Verificar" onclick="calc()"></p>
+            <p><input id="button" type="button" value="Verificar" onclick="calc()"></p>
         </div>
         <div id="center">
-            <p id="resp"></p>
-            <img src="bebe.jpg" alt="foto referente a Idade">
+            <p id="resp">Preencha os dados acima para ver o resultado</p>
+            <img id="img" src="calc.png" alt="resultado">
         </div>
     </section>
     <footer>

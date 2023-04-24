@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(51, 180, 223);
+    background-color:#ff891ae1;
 }
 header{
     font-size: 2em;
@@ -21,7 +21,7 @@ section{
     margin: auto;
     background-color: white;
     width: 350px;
-    height: 430px;
+   
     border-radius: 15px;
     box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.63);
 }
@@ -34,8 +34,19 @@ div{
 div#center{
     text-align: center;
 }
+
 input#ano{
     width: 110px;
+}
+
+input#button{
+    background-color: #ff7b00d0;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+p, img{
+    padding: 5px;
 }
 
 img{
