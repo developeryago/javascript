@@ -49,7 +49,7 @@ function calc(){
             } else if (resultado >= 46){
                 resp.innerHTML = `Detectamos uma senhora de ${resultado} anos`
                 img.src = 'idosa.jpg'
-            }
+            }resp.appendChild(img)
         }
         
     }    
