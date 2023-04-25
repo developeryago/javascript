@@ -20,15 +20,15 @@ header{
 section{
     margin: auto;
     background-color: white;
-    width: 350px;
-    max-height: 350px;
+    width: 330px;
     border-radius: 15px;
     box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.63);
 }
 
 div{
-    padding: 10px;
-    margin: auto; 
+    padding: 7.5px;
+    margin: auto;
+    text-align: center; 
 }
 
 input#passo, input#inicio, input#fim{
