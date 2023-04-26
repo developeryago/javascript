@@ -1,12 +1,14 @@
 function calc(){
-    var num = Number(document.getElementById("num").value)
+    var num = document.getElementById("num")
     var vezes = 1
-    var calc = num * vezes
     var resp = document.getElementById("resp")
-    
-    while (vezes <=10){
-        resp.innerHTML = (`${num} X ${vezes} = ${calc}`)
-        vezes += 1
-    }
 
+    if (num.value == 0){
+        alert('Dados inválidos, digite um número maior ou menor que 0')
+    } else{
+        var n = Number(num.value)
+        for (var c = n; vezes <= 10; vezes += 1){
+            resp.innerHTML += `${c} X ${vezes} = ${c * vezes}<br> `
+        }
+    } resp.style.textAlign = 'center' 
 }
